@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "emailAddress": "sailesh@gmail.com",
+      "password": "password"
+    },
+    {
+      "emailAddress": "sailesh.kumar@yahoo.com",
+      "password": "password"
+    },
+    {
+      "emailAddress": "sailesh123@gmail.com",
+      "password": "password"
+    }
+  ]
+}
