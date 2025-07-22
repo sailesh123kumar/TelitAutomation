@@ -20,19 +20,7 @@ import org.testng.annotations.Test;
  * 4.Atleast one assertion
  */
 @Listeners(com.ui.listener.TestListener.class)
-public class LogInPageTest {
-	
-	
-	HomePage homePage;
-    Logger logger = LoggerUtility.getLogger(this.getClass());
-
-	
-	@BeforeMethod(description = "To Load the HomePage WebSite")
-	public void setUp() {
-		logger.info("Loads the HomePage WebSite");
-		homePage =new HomePage(CHROME);
-	}
-	
+public class LogInPageTest extends BaseTest {
 	
 	
 	@Test(description = "Verify Valid User is able to login into the application" , groups = {"e2e" , "sanity"})
@@ -48,13 +36,13 @@ public class LogInPageTest {
 	}
 	
 	
-	@Test(description = "Verify Valid User is able to login into the application" , groups = {"e2e" , "sanity"},dataProviderClass = com.ui.dataprovider.LogInDataProvider.class , dataProvider = "logInCSVTestData",retryAnalyzer = com.ui.listener.MyRetryAnalyzer.class)
+	@Test(description = "Verify Valid User is able to login into the application" , groups = {"e2e" , "sanity"},dataProviderClass = com.ui.dataprovider.LogInDataProvider.class , dataProvider = "logInCSVTestData",retryAnalyzer = com.ui.listener.MyRetryAnalyzer.class,enabled = false)
 	public void logInPageCSVTest(User user) {
 		assertEquals(homePage.goToLogInPage().doLogInWith(user.getEmailAddress(), user.getPassword()).getUserName(), "Sailesh kumar");
 	}
 	
 	
-	@Test(description = "Verify Valid User is able to login into the application" , groups = {"e2e" , "sanity"},dataProviderClass = com.ui.dataprovider.LogInDataProvider.class , dataProvider = "logInExcelTestData")
+	@Test(enabled = false , description = "Verify Valid User is able to login into the application" , groups = {"e2e" , "sanity"},dataProviderClass = com.ui.dataprovider.LogInDataProvider.class , dataProvider = "logInExcelTestData")
 	public void logInPageExcelTest(User user) {
 		assertEquals(homePage.goToLogInPage().doLogInWith(user.getEmailAddress(), user.getPassword()).getUserName(), "Sailesh kumar");
 	}

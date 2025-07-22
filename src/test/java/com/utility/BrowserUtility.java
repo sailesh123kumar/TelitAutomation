@@ -1,7 +1,13 @@
 package com.utility;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,23 +18,23 @@ import com.constants.Browser;
 
 public abstract class BrowserUtility {
 	
-	private WebDriver driver;
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
     Logger logger = LoggerUtility.getLogger(this.getClass());
 
 	
 	public BrowserUtility(WebDriver driver) {
-		this.driver=driver;
+		this.driver.set(driver);
 	}
 	
 	public BrowserUtility(String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			driver.set( new ChromeDriver());
 		}
 		else if (browserName.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 		}
 		else if (browserName.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		}
 		else {
 			System.err.print("Invalid Browser Name , Please pass the right browser!!!");
@@ -39,13 +45,13 @@ public abstract class BrowserUtility {
 	public BrowserUtility(Browser browserName) {
 		logger.info("Launching the browser on :"+browserName);
 		if (browserName == Browser.CHROME) {
-			driver = new ChromeDriver();
+			driver.set( new ChromeDriver());
 		}
 		else if (browserName == Browser.EDGE) {
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 		}
 		else if (browserName == Browser.FIREFOX) {
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		}
 		else {
 			logger.error("Invalid Browser Name , Please pass the right browser!!!");
@@ -56,22 +62,22 @@ public abstract class BrowserUtility {
 
 	
 	public WebDriver getDriver() {
-		return driver;
+		return driver.get();
 	}
 	
 	public void goToWebsite(String url) {
 		logger.info("Visiting the website :"+url);
-		driver.get(url);
+		driver.get().get(url);
 	}
 	
 	public void maximizeWindow() {
 		logger.info("Maximizing the Browser Window");
-		driver.manage().window().maximize();
+		driver.get().manage().window().maximize();
 	}
 	
 	public void enterText(By locator,String textToEnter) {
 		logger.info("Finding Element with the Locator :"+locator);
-		WebElement element = driver.findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		element.sendKeys(textToEnter);
 		logger.info("Element Found and entering text as :"+textToEnter);
 
@@ -79,7 +85,7 @@ public abstract class BrowserUtility {
 	
 	public void clickOn(By locator) {
 		logger.info("Finding Element with the Locator :"+locator);
-		WebElement element = driver.findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		element.click();
 		logger.info("Element found an performing click operation");
 
@@ -87,10 +93,23 @@ public abstract class BrowserUtility {
 	
 	public String getVisibleText(By locator) {
 		logger.info("Finding Element with the Locator :"+locator);
-		WebElement element = driver.findElement(locator);
+		WebElement element = driver.get().findElement(locator);
 		String text = element.getText();
 		logger.info("Element found and getting the text of WebElement :"+text);
 		return text;
+	}
+	
+	public String getScreenShot(String methodName) {
+		TakesScreenshot screenshot =((TakesScreenshot) driver.get());
+		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
+		String filepath = System.getProperty("user.dir")+"//screenshot_"+methodName+"_"+System.currentTimeMillis()+".png";
+		File file = new File(filepath);
+		try {
+			FileUtils.copyFile(screenshotData, file);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return filepath;
 	}
 	
 
