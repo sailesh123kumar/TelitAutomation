@@ -11,8 +11,11 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.constants.Browser;
 
@@ -52,6 +55,47 @@ public abstract class BrowserUtility {
 		}
 		else if (browserName == Browser.FIREFOX) {
 			driver.set(new FirefoxDriver());
+		}
+		else {
+			logger.error("Invalid Browser Name , Please pass the right browser!!!");
+			System.err.print("Invalid Browser Name , Please pass the right browser!!!");
+		}
+		
+	}
+	
+	public BrowserUtility(Browser browserName,boolean isHeadLess) {
+		logger.info("Launching the browser on :"+browserName);
+		
+		if (browserName == Browser.CHROME) {
+			ChromeOptions options = new ChromeOptions();
+			if(isHeadLess) {
+				logger.info("Launching the browser on headless mode");
+				options.addArguments("--headless");
+				options.addArguments("--window-size=1920,080");
+			}
+			
+			driver.set( new ChromeDriver(options));
+		}
+		
+		else if (browserName == Browser.EDGE) {
+			EdgeOptions options= new EdgeOptions();
+			if(isHeadLess) {
+				logger.info("Launching the browser on headless mode");
+				options.addArguments("--headless");
+				options.addArguments("-disable-gpu");
+			}
+			driver.set(new EdgeDriver(options));
+		}
+		
+		else if (browserName == Browser.FIREFOX) {
+			driver.set(new FirefoxDriver());
+			FirefoxOptions options= new FirefoxOptions();
+			if(isHeadLess) {
+				logger.info("Launching the browser on headless mode");
+				options.addArguments("--headless");
+				options.addArguments("--window-size=1920,080");
+			}
+			driver.set(new EdgeDriver());
 		}
 		else {
 			logger.error("Invalid Browser Name , Please pass the right browser!!!");
@@ -102,7 +146,7 @@ public abstract class BrowserUtility {
 	public String getScreenShot(String methodName) {
 		TakesScreenshot screenshot =((TakesScreenshot) driver.get());
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
-		String filepath = System.getProperty("user.dir")+"//screenshot_"+methodName+"_"+System.currentTimeMillis()+".png";
+		String filepath = System.getProperty("user.dir")+"//screenshot//screenshot_"+methodName+"_"+System.currentTimeMillis()+".png";
 		File file = new File(filepath);
 		try {
 			FileUtils.copyFile(screenshotData, file);
@@ -110,6 +154,11 @@ public abstract class BrowserUtility {
 			e.printStackTrace();
 		}
 		return filepath;
+	}
+	
+	
+	public void quit() {
+		driver.get().quit();
 	}
 	
 
