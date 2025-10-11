@@ -1,98 +1,98 @@
-2025-10-12 03:49:43 [main] INFO com.ui.listener.TestListener::onStart::61 Test Suite Started... 
-2025-10-12 03:49:44 [TestNG-test-UI Automation Test-2] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
-2025-10-12 03:49:44 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
-2025-10-12 03:49:44 [TestNG-test-UI Automation Test-1] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
-2025-10-12 03:49:44 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
-2025-10-12 03:49:49 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
-2025-10-12 03:49:49 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
-2025-10-12 03:49:51 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::23 logInPageJSONTest 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestStart::23 logInPageTest 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
-2025-10-12 03:49:54 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
-2025-10-12 03:49:55 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:49:55 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
-2025-10-12 03:49:55 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:49:55 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh.kumar@yahoo.com 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh@gmail.com 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
-2025-10-12 03:49:56 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::38 logInPageJSONTest FAILED 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::39 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+2025-10-12 03:56:31 [main] INFO com.ui.listener.TestListener::onStart::61 Test Suite Started... 
+2025-10-12 03:56:31 [TestNG-test-UI Automation Test-2] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
+2025-10-12 03:56:31 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
+2025-10-12 03:56:31 [TestNG-test-UI Automation Test-1] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
+2025-10-12 03:56:31 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
+2025-10-12 03:56:34 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
+2025-10-12 03:56:34 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestStart::23 logInPageTest 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::23 logInPageJSONTest 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
+2025-10-12 03:56:39 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
+2025-10-12 03:56:40 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:40 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
+2025-10-12 03:56:40 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:40 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh@gmail.com 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh.kumar@yahoo.com 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:41 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::38 logInPageJSONTest FAILED 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::39 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
   (Session info: chrome=138.0.7204.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [670651edbfa74fa3b7124fe389afa466, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55506}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55506/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 670651edbfa74fa3b7124fe389afa466 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::46 Capturing Screenshot for failed test 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::48 Attaching Screenshot to the HTML file 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.AccountPage::getVisibleText::144 Element found and getting the text of WebElement :Sailesh kumar 
-2025-10-12 03:49:57 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestSuccess::31 logInPageTest PASSED 
-2025-10-12 03:49:58 [TestNG-test-UI Automation Test-1] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
-2025-10-12 03:49:58 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
-2025-10-12 03:49:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
-2025-10-12 03:50:04 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
-2025-10-12 03:50:04 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::23 logInPageJSONTest 
-2025-10-12 03:50:04 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
-2025-10-12 03:50:04 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
-2025-10-12 03:50:04 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
-2025-10-12 03:50:04 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
-2025-10-12 03:50:05 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:50:05 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
-2025-10-12 03:50:06 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh.kumar@yahoo.com 
-2025-10-12 03:50:06 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
-2025-10-12 03:50:06 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
-2025-10-12 03:50:06 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
-2025-10-12 03:50:06 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:50:06 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
-2025-10-12 03:50:08 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::144 Element found and getting the text of WebElement :Sailesh kumar 
-2025-10-12 03:50:08 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestSuccess::31 logInPageJSONTest PASSED 
-2025-10-12 03:50:08 [TestNG-test-UI Automation Test-1] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
-2025-10-12 03:50:08 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
-2025-10-12 03:50:09 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
-2025-10-12 03:50:14 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
-2025-10-12 03:50:14 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::23 logInPageJSONTest 
-2025-10-12 03:50:14 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
-2025-10-12 03:50:14 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
-2025-10-12 03:50:14 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
-2025-10-12 03:50:14 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
-2025-10-12 03:50:15 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:50:15 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
-2025-10-12 03:50:15 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh123@gmail.com 
-2025-10-12 03:50:15 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
-2025-10-12 03:50:15 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
-2025-10-12 03:50:15 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
-2025-10-12 03:50:16 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
-2025-10-12 03:50:16 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
-2025-10-12 03:50:16 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::38 logInPageJSONTest FAILED 
-2025-10-12 03:50:16 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::39 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
+Command: [6f11f9d48a194833a3ada9ab0d853a11, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55750/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f11f9d48a194833a3ada9ab0d853a11 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::46 Capturing Screenshot for failed test 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::48 Attaching Screenshot to the HTML file 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-1] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
+2025-10-12 03:56:42 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
+2025-10-12 03:56:43 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:43 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
+2025-10-12 03:56:44 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
+2025-10-12 03:56:44 [TestNG-test-UI Automation Test-2] INFO com.ui.pages.AccountPage::getVisibleText::144 Element found and getting the text of WebElement :Sailesh kumar 
+2025-10-12 03:56:44 [TestNG-test-UI Automation Test-2] INFO com.ui.listener.TestListener::onTestSuccess::31 logInPageTest PASSED 
+2025-10-12 03:56:48 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
+2025-10-12 03:56:48 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::23 logInPageJSONTest 
+2025-10-12 03:56:48 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
+2025-10-12 03:56:48 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
+2025-10-12 03:56:48 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
+2025-10-12 03:56:48 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
+2025-10-12 03:56:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
+2025-10-12 03:56:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh.kumar@yahoo.com 
+2025-10-12 03:56:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
+2025-10-12 03:56:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
+2025-10-12 03:56:50 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
+2025-10-12 03:56:51 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:51 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
+2025-10-12 03:56:51 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::144 Element found and getting the text of WebElement :Sailesh kumar 
+2025-10-12 03:56:51 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestSuccess::31 logInPageJSONTest PASSED 
+2025-10-12 03:56:52 [TestNG-test-UI Automation Test-1] INFO com.ui.test.LogInPageTest::setUp::35 Loads the HomePage WebSite 
+2025-10-12 03:56:52 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::<init>::69 Launching the browser on :CHROME 
+2025-10-12 03:56:53 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToWebsite::115 Visiting the website :https://www.automationpractice.pl/index.php? 
+2025-10-12 03:56:58 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::maximizeWindow::120 Maximizing the Browser Window 
+2025-10-12 03:56:58 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::23 logInPageJSONTest 
+2025-10-12 03:56:58 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::24 Verify Valid User is able to login into the application 
+2025-10-12 03:56:58 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestStart::25 [e2e, sanity] 
+2025-10-12 03:56:58 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::goToLogInPage::39 Trying to Perform click to go to sign in page 
+2025-10-12 03:56:58 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::133 Finding Element with the Locator :By.xpath: //a[contains(text(),'Sign in')] 
+2025-10-12 03:56:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.HomePage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:56:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: email 
+2025-10-12 03:56:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :sailesh123@gmail.com 
+2025-10-12 03:56:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::125 Finding Element with the Locator :By.id: passwd 
+2025-10-12 03:56:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::enterText::128 Element Found and entering text as :password 
+2025-10-12 03:56:59 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::133 Finding Element with the Locator :By.id: SubmitLogin 
+2025-10-12 03:57:00 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.LogInPage::clickOn::136 Element found an performing click operation 
+2025-10-12 03:57:00 [TestNG-test-UI Automation Test-1] INFO com.ui.pages.AccountPage::getVisibleText::141 Finding Element with the Locator :By.xpath: //a[@title="View my customer account"]/span 
+2025-10-12 03:57:00 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::38 logInPageJSONTest FAILED 
+2025-10-12 03:57:00 [TestNG-test-UI Automation Test-1] ERROR com.ui.listener.TestListener::onTestFailure::39 no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title="View my customer account"]/span"}
   (Session info: chrome=138.0.7204.185)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.31.0', revision: '1ef9f18787*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [880185f68521ed4d4c10190d985241c8, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55592}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55592/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 880185f68521ed4d4c10190d985241c8 
-2025-10-12 03:50:16 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::46 Capturing Screenshot for failed test 
-2025-10-12 03:50:16 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::48 Attaching Screenshot to the HTML file 
-2025-10-12 03:50:16 [main] INFO com.ui.listener.TestListener::onFinish::67 Test Suite Completed!!! 
+Command: [ecefcdc1f240c22eac3da04887853184, findElement {value=//a[@title="View my customer account"]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55831}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55831/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ecefcdc1f240c22eac3da04887853184 
+2025-10-12 03:57:00 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::46 Capturing Screenshot for failed test 
+2025-10-12 03:57:00 [TestNG-test-UI Automation Test-1] INFO com.ui.listener.TestListener::onTestFailure::48 Attaching Screenshot to the HTML file 
+2025-10-12 03:57:00 [main] INFO com.ui.listener.TestListener::onFinish::67 Test Suite Completed!!! 
