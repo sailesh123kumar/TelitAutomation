@@ -146,7 +146,7 @@ public abstract class BrowserUtility {
 	public String getScreenShot(String methodName) {
 		TakesScreenshot screenshot =((TakesScreenshot) driver.get());
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
-		String filepath = System.getProperty("user.dir")+"//screenshot//screenshot_"+methodName+"_"+System.currentTimeMillis()+".png";
+		String filepath ="./screenshot/screenshot_"+methodName+"_"+System.currentTimeMillis()+".png";
 		File file = new File(filepath);
 		try {
 			FileUtils.copyFile(screenshotData, file);
