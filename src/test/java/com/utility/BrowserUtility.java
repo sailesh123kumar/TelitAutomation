@@ -70,6 +70,11 @@ public abstract class BrowserUtility {
 		
 		if (browserName == Browser.CHROME) {
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--remote-allow-origins=*");
+			options.addArguments("--headless=new");
 			if(isHeadLess) {
 				logger.info("Launching the browser on headless mode");
 				options.addArguments("--headless");
