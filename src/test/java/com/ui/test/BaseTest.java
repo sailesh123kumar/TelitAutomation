@@ -7,11 +7,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
+import com.utility.LambdaTestUtility;
 import com.constants.Browser;
 import com.ui.pages.HomePage;
 import com.utility.BrowserUtility;
-import com.utility.LambdaTestUtility;
 import com.utility.LoggerUtility;
 
 public class BaseTest {
