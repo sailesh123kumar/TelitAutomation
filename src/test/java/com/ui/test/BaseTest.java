@@ -1,7 +1,5 @@
 package com.ui.test;
 
-import static com.constants.Browser.CHROME;
-
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
@@ -10,7 +8,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import com.beust.jcommander.Parameter;
 import com.constants.Browser;
 import com.ui.pages.HomePage;
 import com.utility.BrowserUtility;
