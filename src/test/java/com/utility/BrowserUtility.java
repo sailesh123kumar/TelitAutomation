@@ -2,6 +2,8 @@ package com.utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
@@ -142,18 +144,23 @@ public abstract class BrowserUtility {
 		logger.info("Element found and getting the text of WebElement :"+text);
 		return text;
 	}
-	
-	public String getScreenShot(String methodName) {
-		TakesScreenshot screenshot =((TakesScreenshot) driver.get());
+	public String takeScreenShot(String name) {
+		TakesScreenshot screenshot = (TakesScreenshot) driver.get();
+
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE);
-		String filepath ="./screenshots/"+methodName+"_"+System.currentTimeMillis()+".png";
-		File file = new File(filepath);
+		Date date = new Date();
+		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
+		String timeStamp = format.format(date);
+		String path = "./screenshots/" + name + " - " + timeStamp + ".png";
+		File screenshotFile = new File(path);
 		try {
-			FileUtils.copyFile(screenshotData, file);
+			FileUtils.copyFile(screenshotData, screenshotFile);
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return filepath;
+
+		return path;
 	}
 	
 	
