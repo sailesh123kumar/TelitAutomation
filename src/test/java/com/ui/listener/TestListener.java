@@ -35,7 +35,7 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		logger.info (result.getMethod().getMethodName()+ " " +"FAILED");
+		logger.error (result.getMethod().getMethodName()+ " " +"FAILED");
 		logger.error(result.getThrowable().getMessage());
 		ExtentReportUtility.getTest().log(Status.FAIL, result.getMethod().getMethodName()+ " " +"FAILED");
 		ExtentReportUtility.getTest().log(Status.FAIL, result.getThrowable().getMessage());
