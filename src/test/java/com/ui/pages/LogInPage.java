@@ -14,12 +14,25 @@ public final class LogInPage extends BrowserUtility {
 	private static final By EMAIL_TEXT_BOX_LOCATOR = By.id("email");
 	private static final By PASSWORD_TEXT_BOX_LOCATOR = By.id("passwd");
 	private static final By SUBMIT_BUTTON_LOCATOR =  By.id("SubmitLogin");
+	private static final By ERROR_MESSAGE_LOCATOR = By.xpath("//div[contains(@class,'alert-danger')]/ol/li");
 	
 	public AccountPage doLogInWith(String email, String password) {
 		enterText(EMAIL_TEXT_BOX_LOCATOR, email);
 		enterText(PASSWORD_TEXT_BOX_LOCATOR, password);
 		clickOn(SUBMIT_BUTTON_LOCATOR);
 		return new AccountPage(getDriver());
+	}
+	
+	public LogInPage doLogInWithInvalidCreds(String email, String password) {
+		enterText(EMAIL_TEXT_BOX_LOCATOR, email);
+		enterText(PASSWORD_TEXT_BOX_LOCATOR, password);
+		clickOn(SUBMIT_BUTTON_LOCATOR);
+		return this;
+	}
+	
+	
+	public String getErrorMessage() {
+		return getVisibleText(ERROR_MESSAGE_LOCATOR);
 	}
 
 }

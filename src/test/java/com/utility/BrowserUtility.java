@@ -4,10 +4,13 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -74,10 +77,9 @@ public abstract class BrowserUtility {
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--remote-allow-origins=*");
-			options.addArguments("--headless=new");
 			if(isHeadLess) {
 				logger.info("Launching the browser on headless mode");
-				options.addArguments("--headless");
+				options.addArguments("--headless=new");
 				options.addArguments("--window-size=1920,080");
 			}
 			
@@ -131,6 +133,14 @@ public abstract class BrowserUtility {
 		WebElement element = driver.get().findElement(locator);
 		element.sendKeys(textToEnter);
 		logger.info("Element Found and entering text as :"+textToEnter);
+
+	}
+	
+	public void enterSpecialKey(By locator,Keys keysToEnter) {
+		logger.info("Finding Element with the Locator :"+locator);
+		WebElement element = driver.get().findElement(locator);
+		element.sendKeys(keysToEnter);
+		logger.info("Element Found and entering special Keys :"+keysToEnter.toString());
 
 	}
 	

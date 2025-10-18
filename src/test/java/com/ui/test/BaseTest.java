@@ -22,8 +22,8 @@ public class BaseTest {
     @Parameters({"browser","isHeadLess","isLambdaTest"})
 	@BeforeMethod(description = "To Load the HomePage WebSite")
 	public void setUp(
-			@Optional("chrome") String browser , 
-			@Optional("true") boolean isHeadless, 
+			@Optional("edge") String browser , 
+			@Optional("false") boolean isHeadless, 
 			@Optional("false") boolean isLambdaTest , ITestResult result) {
     	this.isLambdaTest = isLambdaTest;
 		WebDriver lambdaDriver;
