@@ -87,7 +87,11 @@ public abstract class BrowserUtility {
 		}
 		
 		else if (browserName == Browser.EDGE) {
-			EdgeOptions options= new EdgeOptions();
+String tempProfile = System.getProperty("java.io.tmpdir") + "edge_profile_" + System.currentTimeMillis();
+
+EdgeOptions options = new EdgeOptions();
+options.addArguments("user-data-dir=" + tempProfile);
+			
 			if(isHeadLess) {
 				logger.info("Launching the browser on headless mode");
 				options.addArguments("--headless");
